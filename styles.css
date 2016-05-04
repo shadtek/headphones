@@ -10,3 +10,31 @@
 	height: 50px;
 	margin: 20px 0 0 20px;
 }
+
+.item {
+	width: 50%;
+	float: left;
+}
+
+.item-title {
+	display: none;
+}
+
+.item img {
+	width: 100%;
+}
+
+@media(min-width: 900px) {
+	.item {
+		width: 100%;
+	}
+
+	.item img {
+		width: 30%;
+		float: right;
+	}
+
+	.item-title {
+		display: block;
+	}
+}
