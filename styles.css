@@ -15,26 +15,37 @@
 	width: 50%;
 	float: left;
 }
-
+.wide-image{
+	display: none;
+}
 .item-title {
 	display: none;
 }
 
-.item img {
+.small-image {
 	width: 100%;
 }
 
 @media(min-width: 900px) {
 	.item {
+		position: relative;
 		width: 100%;
 	}
 
-	.item img {
-		width: 30%;
-		float: right;
+	.wide-image {
+		display: block;
+		width: 100%;
+	}
+
+	.small-image {
+		display: none;
+
 	}
 
 	.item-title {
 		display: block;
+		position: absolute;
+		font-size: 2rem;
+		top: 4rem;
 	}
 }
